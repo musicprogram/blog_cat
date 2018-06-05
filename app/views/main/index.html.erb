@@ -1,0 +1,19 @@
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate laborum optio ullam deserunt alias ea quasi inventore quos, earum fugiat vero, maiores distinctio doloribus beatae quae asperiores facilis dolores aut.
+<br></br>
+
+<% if user_signed_in? %>
+<%= link_to('Logout', destroy_user_session_path, method: :delete) %>
+ <style>
+     body{
+         background-color:red;
+     }
+ </style>
+
+<% else %>
+<style>
+     body{
+         background-color:blue;
+     }
+ </style>
+
+<% end %>
